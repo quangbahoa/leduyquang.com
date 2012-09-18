@@ -1,0 +1,30 @@
+body{font:16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;color:#666;font-weight:300;background:#F0F0ED;margin:0;padding:0 0 20px}
+h1,h2,h3,h4,h5,h6{color:#333;text-shadow:1px 1px 1px rgba(255,255,255,0.5);margin:0 0 10px}
+p,ul,ol,table,pre,dl{margin:0 0 20px}
+h1,h2,h3{line-height:1.1}
+h1{font-size:28px;color:#3981A7}
+h2{font-size:18px;color:#393939;border-bottom:1px solid #ddd;padding-bottom:5px}
+h3,h4,h5,h6{color:#666}
+h3{font-size:18px;line-height:24px}
+a{color:#FF5D55;text-decoration:none;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+a:hover{color:#FF2D22;position:relative;top:1px}
+a small{font-size:11px;color:#666;margin-top:-.6em;display:block}
+ul{list-style-image:url(../images/bullet.png);padding-left:.75em;line-height:1.75}
+strong{font-weight:700;color:#333}
+section img{max-width:100%;margin:0 auto;}
+blockquote{border-left:1px solid #fc0;font-style:italic;margin:0;padding:0 0 0 20px}
+code{font-family:"Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;font-size:13px;background:#e2e5e7;color:#666;border:1px solid #d8d8d8;border-radius:2px;margin:0 4px;padding:3px 6px}
+pre{background:#e2e5e7;border-radius:3px;border:1px solid #d8d8d8;overflow:auto;overflow-y:hidden;padding:8px 15px}
+pre code{display:block;border:none;padding:0}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;border-bottom:1px solid #e5e5e5;color:#444;padding:5px 10px}
+td{text-align:left;border-bottom:1px solid #e5e5e5;padding:5px 10px}
+td:first-child{border-left:1px solid #fc0}
+hr{border:0;outline:none;height:11px;background:transparent url(../images/hr.gif) center center repeat-x;margin:0 0 20px}
+dt{color:#444;font-weight:700}
+small{font-size:12px}
+img {margin: 0 auto;
+background: #F0F0F0;
+border:3px solid #d8d8d8;
+box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.7);
+border-radius:3px;}
