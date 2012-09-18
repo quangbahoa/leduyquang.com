@@ -1,655 +1,78 @@
 <!doctype html>
-<!--
-
-   ____                        _
-  |  _ \                      | |
-  | |_) |_ __ _   _ _ __   ___| |__
-  |  _ <| '__| | | | '_ \ / __| '_ \
-  | |_) | |  | |_| | | | | (__| | | |
-  |____/|_|   \__,_|_| |_|\___|_| |_|
-
--->
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Brunch | HTML5 application assembler</title>
+    <title>Le Duy Quang</title>
     <link rel="stylesheet" href="stylesheets/application.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
 
     <header>
-      <h1>
-        <a href="images/brunch.psd.zip" title="Download the Brunch logo">
-          <img src="images/brunch.png" alt="Brunch">
-        </a>
-      </h1>
-      <p>A lightweight approach to building HTML5 applications with an emphasis on elegance and simplicity.</p>
+		<h1 id="logo">
+        <a href="#" title="Le duy quang"></a>
+		</h1>
+		<p class="slogen">I love the comment, “You must love designing for a living.” At that point I usually start to laugh or break into uncontrollable tears!</p>
     </header>
 
     <div class="wrapper">
       <nav>
-        <div class="social-buttons">
-          <iframe class="social-button-twitter" allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=brunch&show_count=true&size=l"
-  style="width:174px; height:30px;"></iframe>
-          <iframe class="social-button-github" src="http://ghbtns.com/github-btn.html?user=brunch&repo=brunch&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="165px" height="30px"></iframe>
-        </div>
         <ul></ul>
       </nav>
       <section>
-        <h1>Application assembler</h1>
+        <h1>Colophon</h1>
 
 <p>
-  Brunch is an assembler for HTML5 applications.
-  It‘s agnostic to frameworks, libraries, programming, stylesheet &amp;
-  templating languages and backend technology.
+  Màu sắc, dùng màu là sự tương phản của tính cách mỗi người.
+  Tôi yêu những sắc màu, nhất là những màu lạnh. Nó khiến tôi cảm thấy mình khác lạ!
 </p>
 
 <p>
-  To simplify app development, brunch watches your files for changes
-  and automatically wraps your scripts and templates in common.js modules.
-  All build errors are printed to console.
-  If you have OS X 10.8+ / growl / libnotify,
-  brunch will use them too. See <a href="#compare">compare table</a>
-  for detailed feature list.
+  Cái đẹp ở mỗi người mỗi khác, và tất nhiên ai cũng muốn hướng tới cái đẹp thực sự của bản thân.
+  Tôi chọn công việc thiết kế vì tôi được dùng màu và được khám phá qua mỗi lần hoàn thành.
 </p>
 
+<h2>Dịch vụ</h2>
+
 <p>
-  Installation is one-line. You‘ll need node.js 0.6.10+. Execute in console:
+  Nếu bạn đang tìm một người thiết kế giao diện web/cms/shoppingcart, tư vấn xây dựng dự án, vận hành dự án dựa trên <a href="http://wordpress.org" target="_blank">WordPress</a> tôi có thể giúp được bạn.
 </p>
 
-<pre><code>npm install -g brunch</code></pre>
 
-<h2>Getting started</h2>
-
-<p>
-  To create a new project, execute
-  <code>brunch new &lt;project name&gt;</code>.
-</p>
+<h2>Liên hệ</h2>
 
 <p>
-  Now you can edit the code.
-  <code>app/</code> directory has files of your project and
-  <code>vendor/</code> has libraries etc.
-  that would not be wrapped in common.js modules.
-</p>
-
-<p>
-  To build it, execute <code>brunch build</code>
-  in project directory.
-</p>
-
-<p>
-  To continuously rebuild the project on every change,
-  run <code>brunch watch</code>.
-</p>
-
-<p>
-  To run a simple http server, execute
-  <code>brunch watch --server</code>.
-</p>
-
-<h2>Plugins</h2>
-
-<p>
-  Brunch has a plugin ecosystem to achieve interoperability
-  with various stuff simply via
-  <a href="http://brunch.readthedocs.org/en/latest/plugins.html">plugin API</a>.
-</p>
-
-<p>
-  For example, if you use JavaScript files in your project,
-  you‘ll need a plugin that adds JS support.
-  Same with styles, templates, minifiers, linters and much more.
-</p>
-
-<p>
-  To install new plugin or remove other one, usually you‘ll
-  need to do three simple steps:
-</p>
-
-<ol>
-  <li>
-    Add plugin name and version
-    to <code>package.json</code>‘s <code>dependencies</code> hash.
-    See <a href="http://npmjs.org/doc/json.html#dependencies">npm docs</a>
-    for more docs on packages.
-    You can use npm package name or git / GitHub URL.
-  </li>
-  <li>
-    (sometimes needed)
-    Remove <code>node_modules</code> directory</li>
-  <li>
-    Execute <code>npm install</code> in app root directory.
-  </li>
-</ol>
-
-<p>
-  All plugins are available at
-  <a href="https://github.com/brunch/brunch/wiki/Plugins">the Plugins wiki page</a>.
-  Feel free to add your plugins to it.
-  Some interesting plugins from there:
+  Mọi liên hệ sẽ được trả lời sớm nhất có thể. Xin vui lòng sử dụng cách liên lạc qua email để nhận được hồi đáp trong vòng 24h.
 </p>
 
 <ul>
-  <li>
-    Programming languages: JavaScript,
-    <a href="http://coffeescript.org/">CoffeeScript</a>,
-    <a href="http://maxtaco.github.com/coffee-script/">IcedCoffeeScript</a>,
-    <a href="http://gkz.github.com/LiveScript/">LiveScript</a>,
-    <a href="http://roy.brianmckenna.org/">Roy</a>
+  <li>Email: <code>info@leduyquang.com</code> hoặc <a href="https://docs.google.com/spreadsheet/viewform?formkey=dDYxZWlnWmtOaloybi1yUW8xU3l3NVE6MQ" target="_blank">online form</a>
   </li>
 
-  <li>
-    Pre-compiled templates:
-    <a href="http://handlebarsjs.com/">Handlebars.js</a>,
-    <a href="http://visionmedia.github.com/jade/">Jade</a>,
-    <a href="http://twitter.github.com/hogan.js/">Mustache</a>,
-    <a href="https://github.com/sstephenson/eco">Eco</a>
+  <li>Facebook <a href="http://www.facebook.com/quangbahoa" target="_blank">#quangbahoa</a>
   </li>
 
-  <li>
-    Styles: CSS,
-    <a href="http://learnboost.github.com/stylus/">Stylus</a>,
-    <a href="http://lesscss.org/">LESS</a>,
-    <a href="http://sass-lang.com/">Sass</a>
+  <li>Twitter <a href="http://twitter.com/quangbahoa" target="_blank">@quangbahoa</a>
   </li>
 
-  <li>
-    Minifiers:
-    <a href="https://github.com/mishoo/UglifyJS">uglify.js</a>,
-    <a href="https://github.com/GoalSmashers/clean-css">clean-css</a>
+  <li>Github <a href="https://github.com/doobbe">@doobbe</a>
   </li>
 </ul>
 
-<h2>Skeletons</h2>
 
-<p>
-  Brunch skeleton is basically an application boilerplate that provides
-  a good starting point for new applications.
-  Creating new application with any skeleton is pretty simple:
-</p>
-
-<pre><code>brunch new &lt;app&gt; --skeleton &lt;address&gt;</code></pre>
-
-<p>
-  Brunch doesn‘t encourage you to use any particular technology,
-  but application skeletons can do it.
-</p>
-
-<p>
-  If you create your own open-source skeleton,
-  feel free to add it to
-  <a href="https://github.com/brunch/brunch/wiki/Skeletons">the wiki Skeletons page</a>.
-  Some interesting skeletons from there:
-</p>
-
-<ul>
-  <li>
-    <a href="https://github.com/paulmillr/brunch-with-chaplin">Brunch with Chaplin (comes with brunch)</a>:
-    HTML5 Boilerplate,
-    <a href="https://github.com/chaplinjs/chaplin">Chaplin</a>
-    classes over Backbone.js. Main languages are CoffeeScript,
-    Stylus and Handlebars. Pretty useful for big apps.
-  </li>
-
-  <li>
-    <a href="https://github.com/Nami-Doc/brunch-with-chaplin-ls">Brunch with Chaplin and LiveScript</a> –
-    <a href="http://gkz.github.com/LiveScript/">LiveScript</a>
-    is used instead of CoffeeScript.
-  </li>
-
-  <li>
-    <a href="https://github.com/nezoomie/brunch-eggs-and-bacon">Brunch with eggs and bacon</a>:
-    fat and tasty. Main languages are JavaScript, Sass, LESS &amp; Handlebars.
-    Includes Backbone.Mediator &amp; Twitter Bootstrap.
-  </li>
-
-  <li>
-    <a href="https://github.com/elving/brunch-with-hipsters">Brunch with hipsters</a>:
-    Backbone.js, Swag, Modernizr, Lodash, Backbone-Mediator,
-    Font Awesome, Brunch Auto-Reload. Main languages are Coffee, Stylus and
-    Handlebars.
-  </li>
-
-  <li>
-    <a href="https://github.com/icholy/ember-brunch">Brunch with Ember</a>:
-    Ember.js, jQuery, Bootstrap. Main languages are JS, CSS and Handlebars.
-  </li>
-
-  <li>
-    <a href="https://github.com/damiencaselli/spine-on-brunch">Spine on Brunch</a>:
-    Spine.js, jQuery. Main languages are CoffeeScript, Stylus and Handlebars.
-  </li>
-
-  <li>
-    <a href="https://github.com/scotch/angular-brunch-seed">Angular brunch seed</a>:
-    AngularJS, Twitter Bootstrap. Main languages are CoffeeScript, Jade and Less.
-  </li>
-</ul>
-
-<h2>Testing</h2>
-
-<p>
-  Brunch also has a built-in console-based test runner,
-  which will auto-require all your files in <code>test/</code>
-  directory and run them
-  via <a href="http://visionmedia.github.com/mocha/">Mocha</a>
-  test runner.
-</p>
-
-<p>
-  No more need to launch browser to run tests!
-
-  To launch Mocha in jsdom console environment, execute <code>brunch test</code>
-</p>
-
-<h2>Deploying</h2>
-
-<p>
-  Brunch-generated applications are a bunch of simple static files. You can
-  host them everywhere, even on free hostings, like
-  <a href="http://help.github.com/pages/">GitHub pages</a>.
-</p>
-
-<p>
-  Because production environments are usually
-  slightly different than development envs,
-  brunch has minify option. To build application
-  that has minified JS and CSS, execute <code>brunch build --minify</code>.
-
-  Then you can deploy it:
-</p>
-
-<ul>
-  <li>
-    If you use <strong>static hosting site</strong>: build your application
-    at your machine and just upload <code>public/</code>
-    directory to the directory that is served by a webserver.
-  </li>
-  <li>
-    If you use <strong>hosting that supports node.js</strong>, you can
-    install brunch there and auto-build app every time.
-  </li>
-  <li>
-    If you use
-    <a href="http://help.github.com/pages/">GitHub pages</a>,
-    you‘ll need to build your app,
-    move <code>public/</code> directory to somewhere,
-    <a href="http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging">switch to <code>gh-pages</code>
-    git branch</a>,
-    remove files from directory and move files from your temporary
-    dir here. There‘s no automated solution for this
-    currently, yet.
-  </li>
-</ul>
-
-<h2>Documentation</h2>
-
-<p>
-  Brunch concatenates all your files in
-  <code>app/</code>, <code>test/</code> and <code>vendor/</code>
-  directories to <strong>two</strong> files by default:
-</p>
-
-<ul>
-  <li><code>app.js</code> contains your application code.</li>
-  <li>
-    <code>vendor.js</code> contains code of libraries you depend on
-    (e.g. jQuery).
-  </li>
-</ul>
-
-<p>
-  This is better solution for browser caching than using one file,
-  because you change dependencies not as often as you change
-  your application code.
-</p>
-
-<p>Some files have special meaning:</p>
-
-<ul>
-  <li>
-    Files whose name start with <code>_</code> (underscore)
-    are ignored by compiler. They're useful for languages like sass / stylus,
-    where you import all substyles in main style file.
-  </li>
-  <li>
-    Files in <code>assets/</code> dirs are copied directly to
-    <code>public/</code>.
-  </li>
-  <li>
-    Files in <code>vendor/</code> dirs aren't wrapped in modules.
-    Module is a Common.JS / AMD abstraction that allows to simply
-    get rid of global vars. For example, you have file
-    <code>app/views/user_view</code> —
-    you can load this in browser by using
-    <code>require('views/user_view')</code>.
-  </li>
-  <li>
-    Files named as <code>_test.&lt;extension&gt;</code>
-    are considered as tests
-    and are required automatically in test runner.
-  </li>
-</ul>
-
-<p>
-  Order of concatenation is:
-</p>
-
-<ol>
-  <li>
-    Files in <code>config.files[type].order.before</code> in
-    order you specify.
-  </li>
-  <li>Files in <code>vendor/</code> directories in alphabetic order.</li>
-  <li>All other files in alphabetic order.</li>
-  <li>
-    Files in <code>config.files[type].order.after</code>
-    in order you specify.
-  </li>
-</ol>
-
-<p>
-  All this stuff (conventions, name of out files etc) can be changed
-  via modifying config file.
-  More detailed documentation is available at
-  <a href="http://brunch.readthedocs.org/">brunch.readthedocs.org</a>.
-  If you‘re upgrading from earlier version, you might be interested in
-  <a href="http://brunch.readthedocs.org/en/latest/upgrading.html">upgrading guide</a>
-  and
-  <a href="https://github.com/brunch/brunch/blob/master/CHANGELOG.md">changelog</a>.
-</p>
-
-<h2>Compare table</h2>
-
-<div class="compare-link-container">
-  <a class="compare-link" id="compare" name="compare" href="#compare">h</a>
-</div>
-
-<p>
-  Brunch is similar to Grunt, LiveReload and CodeKit.
-  And it‘s also different.
-
-  Here‘s a quick table that compares their features:
-</p>
-
-<table class="compare-builders">
-  <tr>
-    <th>Feature</th>
-    <th>Brunch</th>
-    <th><a href="http://gruntjs.com/">Grunt</a></th>
-    <th><a href="http://livereload.com/">LiveReload</a></th>
-    <th><a href="http://incident57.com/codekit/">CodeKit</a></th>
-    <th><a href="http://walmartlabs.github.com/lumbar/">Lumbar</a></th>
-    <th>Comment</th>
-  </tr>
-  <tr>
-    <th>Builder, concatenator, minifier</th>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td>Brunch can compile your JS, CoffeeScript, Stylus, Sass (+ Compass), LESS, Mustache, Handlebars, Jade, Eco (and much more) files, concatenate output to and minify it. It just doesn‘t care about languages or frameworks you use.</td>
-  </tr>
-  <tr>
-    <th>File watcher</th>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td>Brunch recompiles and concats all your stuff automatically on any change, headlessly. No more need in compicated Makefiles and watchers.</td>
-  </tr>
-  <tr>
-    <th>Automatic browser reloading</th>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="hasnt-feature">✗</td>
-    <td>Brunch reloads your browser window every time you change stuff. (with autoreload plugin)</td>
-  </tr>
-  <tr>
-    <th>Blazing fast third-party API</th>
-    <td class="has-feature">✓</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td>Speed is important for app watchers. Usual brunch compilation takes less than 100ms. You can use Brunch features in your node.js projects without mess.</td>
-  </tr>
-  <tr>
-    <th>Automatic wrapping of scripts in modules</th>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="has-feature">✓</td>
-    <td>All script and template files in `app/` directory are wrapped in modules to prohibit global public access and encapsulate code.</td>
-  </tr>
-  <tr>
-    <th>OS X Notification Center / Growl / Inotify output for errors</th>
-    <td class="has-feature">✓</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td>If any compiler throws an error, brunch displays it as detailed notification.</td>
-  </tr>
-  <tr>
-    <th>Built-in webserver</th>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td>Brunch has a webserver that runs on `public` directory and an API for simple custom webservers.</td>
-  </tr>
-  <tr>
-    <th>Skeletons (boilerplates)</th>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="has-feature">✓</td>
-    <td>Brunch can generate your project from predefined template. There‘s a lot of great skeleton projects you can use already.</td>
-  </tr>
-  <tr>
-    <th>Scaffolding (generate / destroy)</th>
-    <td class="has-feature">✓</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="has-feature">✓</td>
-    <td>Brunch can also scaffold files in your projects from templates.</td>
-  </tr>
-  <tr>
-    <th>Headless testing without a browser</th>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td>Brunch has a `test` command which allows you to run tests in command line, without browser.</td>
-  </tr>
-  <tr>
-    <th>Cross-platform</th>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="has-feature">✓</td>
-    <td>Brunch works everywhere.</td>
-  </tr>
-  <tr>
-    <th>Free</th>
-    <td class="has-feature">✓</td>
-    <td class="has-feature">✓</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="hasnt-feature">✗</td>
-    <td class="has-feature">✓</td>
-    <td>Brunch is free, both as in beer and as in speech.</td>
-  </tr>
-</table>
-
-<h1>Examples</h1>
-
-<p>
-  We know of a few folks who are using brunch already.
-  Ranging from internal tooling to high traffic facebook apps.
-  Know someone else who is enjoying brunch already?
-  Feel free to edit <a href="https://github.com/brunch/brunch/wiki/Projects-and-companies-using-Brunch">the wiki page</a>!
-</p>
-
-<p>
-  For examples, articles and tutorials there are
-  <a href="https://github.com/brunch/brunch/wiki/Examples,-articles-and-tutorials">another wiki page</a>.
-</p>
-
-<p class="users">
-  <img src="images/users/jimbeam.png" alt="Jim Beam">
-  <img src="images/users/redbull.png" alt="Red Bull">
-  <img src="images/users/uber.png" alt="Uber">
-  <img src="images/users/ykky.png" alt="YKKY">
-</p>
-
-<h2>Todos</h2>
-
-<p><strong>Disclaimer:</strong> besides of popular use, todos isn‘t a great example of a real-world web application. <a href="todos/public/">Todos</a> is a port of the famous backbone todos example app (<a href="https://github.com/brunch/todos">code</a>). Uses localStorage to persist data.</p>
-
-<p>Sébastien Béal also made <a href="https://github.com/sebastibe/brunch-django-examples">an alternative</a> which uses Django + Django Rest Framework to persist data.</p>
-
-<h2>Ostio</h2>
-
-<p><a href="http://ost.io/">Ostio</a> is an open-source forum for GitHub projects (<a href="https://github.com/paulmillr/ostio">code</a>). Uses <a href="https://github.com/paulmillr/brunch-with-chaplin">Chaplin</a> as app skeleton and Rails for backend.</p>
-
-<p>
-  <a href="http://ost.io/">
-    <img src="images/screenshots/ostio.png" alt="">
-  </a>
-</p>
-
-<h2>Twitter</h2>
-
-<p><a href="twitter/public/">Tweet your brunch</a> is a simple twitter client (<a href="https://github.com/brunch/twitter">code</a>). Uses <a href="https://github.com/paulmillr/brunch-with-chaplin">Chaplin</a> as app skeleton.</p>
-
-<p>
-  <a href="twitter/public/">
-    <img src="images/screenshots/twitter.png" alt="">
-  </a>
-</p>
-
-<h2>blossom</h2>
-<p><a href="https://www.blossom.io">Blossom</a> is a lightweight project management tool for lean teams. Backbone.js is heavily used in combination with CoffeeScript to provide a smooth interaction experience. The RESTful backend is built with Flask on Google App Engine.</p>
-
-<p>
-  <a href="https://www.blossom.io/">
-    <img src="images/screenshots/blossom.png" alt="Blossom" />
-  </a>
-</p>
-
-<h2>Snip.it</h2>
-<p>
-  <a href="http://snip.it">Snip.it</a> help you collect your thoughts and your opinions about your favorite topics, and discover others who care about the things you care about.
-</p>
-
-<p>
-  Their client app is built with Brunch on top of Chaplin &amp; Backbone.
-  The backend is Rails.
-</p>
-
-<p>
-  <a href="http://snip.it">
-    <img src="images/screenshots/snipit.png" alt="Snip.it" />
-  </a>
-</p>
-
-<h2>ChainCal</h2>
-<p><a href="http://chaincalapp.com">ChainCal</a> is an iPhone app that helps you to track your daily goals in a minimalist, visual way. The app is written almost entirely in CoffeeScript, Backbone handles the models, collections and views, and persistence is done with a Backbone.sync localStorage adapter. Templates are written in Eco and the app is packaged with Brunch and deployed with Phonegap.</p>
-
-<p>
-  <a href="http://chaincalapp.com">
-    <img src="images/screenshots/chaincal.png" alt="Chaincal" />
-  </a>
-</p>
-
-<h2>Uber</h2>
-<p>
-  <a href="http://uber.com">Uber</a> is everyone‘s private driver. Their <a href="http://clients.uber.com/">clients app</a> is made with brunch.
-</p>
-
-<h1>Community</h1>
-
-<p>Follow <a href="http://twitter.com/brunch">@brunch</a> and <a href="http://twitter.com/paulmillr">@paulmillr</a> on twitter to get latest updates &amp; news.
-Feel free to discuss things with other users and ask for help in our ost.io <a href="http://ost.io/brunch/brunch">forum section</a>.
-</p>
-
-<h2>Text editor plugins</h2>
-<p>Text editor plugins simplify developing apps. Available plugins:</p>
-
-<ul>
-  <li><a href="https://github.com/drichard/vim-brunch">Vim-brunch</a> by <a href="https://github.com/drichard">@drichard</a></li>
-</ul>
-
-<h2>Contributing to Brunch</h2>
-
-<ul>
-  <li>Fork the <a href="https://github.com/brunch/brunch">official repository</a>.</li>
-  <li>Clone your fork: <code>git clone git@github.com:&lt;your-username&gt;/brunch.git</code></li>
-  <li>Make sure tests are passing for you: <code>npm install &amp;&amp; npm test</code></li>
-  <li>Create a topic branch: <code>git checkout -b topics/new-feature-name</code></li>
-  <li>Add tests and code for your changes.</li>
-  <li>Once you‘re done, make sure all tests still pass: <code>npm install &amp;&amp; npm test</code></li>
-  <li>Make sure your code conforms <a href="https://github.com/paulmillr/code-style-guides#coffeescript">coffee style guide</a></li>
-  <li>Commit and push to your fork.</li>
-  <li>Create an pull request from your branch.</li>
-  <li>Sit back and enjoy.</li>
-</ul>
-
-<h2>Brought to you by</h2>
-
-<p class="builders">
-  <a href="http://paulmillr.com/" rel="author"><img src="http://api.twitter.com/1/users/profile_image/paulmillr?size=normal" alt="Paul Miller">
-   <span class="name">Paul</span> Miller</a>
-
-  <a href="http://nikgraf.com/"><img src="http://api.twitter.com/1/users/profile_image/nikgraf?size=normal" alt="Nik Graf">
-   <span class="name">Nik</span> Graf</a>
-
-  <a href="http://tosh.at/"><img src="http://api.twitter.com/1/users/profile_image/__tosh?size=normal" alt="Thomas Schranz">
-   <span class="name">Thomas</span> Schranz</a>
-
-  <a href="https://github.com/andihit"><img src="https://secure.gravatar.com/avatar/74d7e8869ad171950bff18c214b924b6?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" alt="Andreas Gerstmayr" width="48">
-   <span class="name">Andreas</span> Gerstmayr</a>
-</p>
 </section>
 
 <footer>
-  <p><small>Hosted on GitHub Pages &mdash; Theme based on <a href="https://github.com/mattgraham/Leap-Day">Leap Day</a>, tweaked by Brunch Team.</small></p>
+  <p><small>Hosted on GitHub Pages &mdash; Theme based on <a href="https://github.com/mattgraham/Leap-Day">Leap Day</a>, Thanks to Brunch and Avgrund.</small></p>
 </footer>
 
 </div>
-
-<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
-<script type="text/javascript">
-  var _gauges = _gauges || [];
-  (function() {
-    var t   = document.createElement('script');
-    t.type  = 'text/javascript';
-    t.async = true;
-    t.id    = 'gauges-tracker';
-    t.setAttribute('data-site-id', '4f1631bbcb25bc723b000007');
-    t.src = '//secure.gaug.es/track.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(t, s);
-  })();
-</script>
 </body>
 </html>
