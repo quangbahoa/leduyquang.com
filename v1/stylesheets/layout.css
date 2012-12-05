@@ -1,0 +1,93 @@
+.wrapper{width:690px;position:relative;margin:0 auto}
+header{min-height:80px;text-align:center;background:#323232;-webkit-font-smoothing:antialiased;border-bottom:2px solid #E4E4DF;padding:10px 0}
+header p.slogen{color:#898989;text-shadow:rgba(0,0,0,0.2) 0 1px 0;font-size:18px;padding-top:20px;max-width:680px;margin:0 auto}
+.social-buttons{margin-bottom:20px;padding-left:10px}
+.social-buttons .button{font-size:14px;background:#2D5891;border-radius:20px;margin-left:10px;padding:9px 13px}
+.social-buttons .button:hover{background-color:#1d3871}
+.social-buttons .button strong{color:#fff;text-shadow:0 2px 0 #235796}
+.social-button-twitter{margin-bottom:5px}
+nav{position:absolute;width:175px;top:10px;left:50%;margin-left:-540px}
+nav ul{list-style-image:url(../images/bullet.png);font-size:12px;line-height:24px;padding:10px}
+nav ul li{margin-left:1em;line-height:16px;padding:5px 0}
+nav ul li.tag-h1{font-size:1.4em;list-style:none;margin-left:0}
+nav ul li.tag-h1 a{font-weight:700;color:#3981A7}
+nav ul li.tag-h2 + .tag-h1{margin-top:10px}
+nav ul a{color:#7d7d7d;font-weight:700;text-shadow:3px 3px 0 rgba(255,255,255,0.3)}
+nav ul a:hover{color:#E60B00;text-decoration:none}
+section{max-width:690px;position:relative;background:#fbfbfb;border-radius:4px;border:1px solid #E4E4DF;margin:40px 0 20px;padding:30px}
+footer{bottom:20px}
+@media only screen and (max-width: 1060px) {
+  div.wrapper {
+    width: auto;
+    margin: 0;
+  }
+  nav {
+    display: none;
+  }
+  section {
+    margin: 30px auto 20px;
+  }
+  footer {
+    text-align: center;
+  }
+}
+
+/* Tablets */
+@media only screen and (max-width: 1024px) {
+  header {
+    padding: 20px;
+    margin: 0;
+  }
+  header p.slogen{
+    margin: auto 100px;
+	padding-left:150px;
+  }
+  section {
+    width: auto;
+    margin-top: 0;
+  }
+  h1#logo{margin-left:-380px;}
+  
+}
+
+/* Phones */
+@media only screen and (max-width: 480px) {
+  header h1 img {
+    height: 70px;
+  }
+  header p {
+    font-size: 14px;
+    margin: auto 20px;
+  }
+  .social-buttons {
+    position: relative;
+    right: auto;
+  }
+  .social-buttons .button {
+    display: inline-block;
+    float: none;
+    margin-bottom: 20px;
+  }
+  section {
+    padding: 20px;
+  }
+  .compare-builders {
+    font-size: 7px;
+  }
+  .compare-builders tr th:last-child,
+  .compare-builders tr td:last-child {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 768px) {
+  header p.slogen {}
+  h1#logo{margin-left:-320px;}
+}
+@media only screen and (max-height: 480px) {
+  nav {
+    display: none;
+  }
+  header p.slogen {display: none;}
+  h1#logo{margin-left:-200px;}
+}
