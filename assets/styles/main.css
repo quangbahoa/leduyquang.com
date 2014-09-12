@@ -341,6 +341,18 @@ strong {
     width: 200px;
 }
 
+/* Project Section
+*********************************************************************************************/
+#project a {
+    color: #ccc;
+        border-bottom: 1px dotted #ccc;
+        -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.25);
+        -moz-box-shadow:    4px 4px 5px 0px rgba(50, 50, 50, 0.25);
+        box-shadow:         4px 4px 5px 0px rgba(50, 50, 50, 0.25);
+}
+#project .left {text-align: right; padding: 40px 20px 0 0;}
+#project .right {text-align: left; padding: 40px 0 0 20px;}
+
 /* Video Panels
 *********************************************************************************************/
 
@@ -382,6 +394,7 @@ strong {
     padding: 30px 0;
     font-size: 14px;
     line-height: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 #footer .left {
