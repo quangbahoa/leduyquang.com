@@ -174,6 +174,11 @@ AddType	text/vtt				vtt
 	ExpiresByType text/javascript 			"access plus 1 year"
 </IfModule>
 
+<FilesMatch "(?i)^.*\.(ico|flv|jpg|jpeg|png|gif|js|css|woff)$">
+ExpiresActive On
+ExpiresDefault A2592000
+</FilesMatch>
+
 # TODO: Set Last-Modified per Google's recommendation to complete browser caching
 
 # -------------------------------------------------------------------------
@@ -183,6 +188,7 @@ AddType	text/vtt				vtt
 <IfModule mod_headers.c>
 	# Try removing etag headers (if it's coming from proxy for example)
 	Header unset ETag
+    Header set Connection keep-alive
 </IfModule>
 
 # Remove ETags
