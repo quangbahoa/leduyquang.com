@@ -1,26 +1,25 @@
 ---
-layout: home
+layout: default
 ---
 
 <div id="main">
         <div class="wrapper">
-            <div class="news">
-		{% for post in site.posts limit:1 %}
-		        <h2>News</h2>
+            <div class="section">
+		<h2>Blog</h2>
+		{% for post in site.posts limit:10 %}
 		        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+			<p class="time-stamp ss-file">
+		            {{ post.date | date: "%b %-d, %Y" }}
+		        </p>
 		        <p><em>{{ post.excerpt }}</em></p>
 		        <p><a href="{{ post.url | prepend: site.baseurl }}">Read more&nbsp;»</a>
 		        </p>
-		        <p class="time-stamp ss-file">
-		            {{ post.date | date: "%b %-d, %Y" }}
-		        </p>
-		        <p><a href="{{ site.baseurl }}/blog">View all posts&nbsp;»</a>
-		        </p>
 		{% endfor %}
             </div>
-            <div class="events">
-                <h2>Tags</h2>
-                <ul class="events-list">
+            <div class="aside">
+		    <h2>Tags</h2>
+
+		    <ul class="events-list">
                     <li class="vevent">
                         <div>
                             <h3><a href="{{ site.baseurl }}/blog/web-standard.html">Web Standard</a></h3>
@@ -37,14 +36,14 @@ layout: home
                             </p>
                         </div>
                     </li>
-		    <li class="vevent">
+	 	    <li class="vevent">
                         <div>
                             <h3><a href="{{ site.baseurl }}/blog/linux.html">Linux</a></h3>
                             <p class="subtitle">
                                 Linux Administrator Exs    
                             </p>
                         </div>
-                    </li>
+                    </li>	
 		    <li class="vevent">
                         <div>
                             <h3><a href="{{ site.baseurl }}/blog/uncategorized.html">Uncategorized</a></h3>
@@ -54,7 +53,7 @@ layout: home
                         </div>
                     </li>		
                 </ul>
-            
-            </div>
+
+		</div>
         </div>
         </div> <!-- #main -->
