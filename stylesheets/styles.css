@@ -301,25 +301,31 @@ a.q {color: #fff;}
   }
 
 /* Top */
-
+.hr {
+    border-bottom: 1px solid #dddbd2;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+}
 .top {
   float: left;
   width: 100%;
-    height: 333px;
+    height: 350px;
   font-size: 14px;
-    background: url(../images/header_images.png) no-repeat 20px 30px;
-    border-top: 1px solid #dddbd2;
-    padding-top: 40px;
+    background: url(../images/header_images.png) no-repeat bottom left;
   }
 
 .intro {
-  width: 400px;
+  width: 40%;
   margin: 0 auto;
   color: #65615c;
   font-size: 16px;
   line-height: 160%;
   text-shadow: 0 1px 0 #fff;
-    padding-left: 600px;
+    float: right;
+    height: 374px;
+    padding: 0 40px 0 20px;
+
   }
 .intro .btn {margin-top: 30px;}
 .intro .btn a, .btn.big a {
@@ -1100,7 +1106,7 @@ blockquote, .quote blockquote p {
 .connect {
   float: right;
   width: 400px;
-  padding: 35px 50px 0 0;
+  padding: 45px 50px 0 0;
   background: url(../images/jekyll.png) 180px top no-repeat;
   }
 .connect input[type="text"] {width: 190px; margin: 2px 12px 15px 0;}
