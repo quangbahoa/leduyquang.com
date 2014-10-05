@@ -1099,9 +1099,9 @@ blockquote, .quote blockquote p {
 
 .connect {
   float: right;
-  width: 340px;
+  width: 400px;
   padding: 35px 50px 0 0;
-  background: url(../images/jekyll.png) 160px top no-repeat;
+  background: url(../images/jekyll.png) 180px top no-repeat;
   }
 .connect input[type="text"] {width: 190px; margin: 2px 12px 15px 0;}
 .connect p {margin: 0 0 .5em;}
