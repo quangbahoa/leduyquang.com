@@ -1,60 +1,81 @@
----
-layout: home
----
+<!doctype html>
+<html lang="vi-VN" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thiet ke wordpress, xay dung cms cho doanh nghiep va quan ly adwords">
+    <link rel="canonical" href="http://leduyquang.com/">
+    <link rel="author" href="https://plus.google.com/101390877368103749102"/>
+    
+	<link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 
-<div id="main">
-        <div class="wrapper">
-            <div class="news">
-		{% for post in site.posts limit:1 %}
-		        <h2>Blog</h2>
-		        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-		        <p><em>{{ post.excerpt }}</em></p>
-		        <p><a href="{{ post.url | prepend: site.baseurl }}">Read more&nbsp;»</a>
-		        </p>
-		        <p class="time-stamp ss-file">
-		            {{ post.date | date: "%b %-d, %Y" }}
-		        </p>
-		        <p><a href="{{ site.baseurl }}/blog">View all posts&nbsp;»</a>
-		        </p>
-		{% endfor %}
-            </div>
-            <div class="events">
-                <h2>Tags</h2>
-                <ul class="events-list">
-                    <li class="vevent">
-                        <div>
-                            <h3><a href="{{ site.baseurl }}/blog/web-standard.html">Web Standard</a></h3>
-                            <p class="subtitle">
-                                Bài viết về chuyên đề css, html và javascripts
-                            </p>
-                        </div>
-                    </li>
-		    <li class="vevent">
-                        <div>
-                            <h3><a href="{{ site.baseurl }}/blog/wordpress.html">WordPress</a></h3>
-                            <p class="subtitle">
-                                Kinh nghiệm về xây dựng, vận hành và quản trị WordPress
-                            </p>
-                        </div>
-                    </li>
-		    <li class="vevent">
-                        <div>
-                            <h3><a href="{{ site.baseurl }}/blog/linux.html">Linux</a></h3>
-                            <p class="subtitle">
-                                Linux Administrator Exs    
-                            </p>
-                        </div>
-                    </li>
-		    <li class="vevent">
-                        <div>
-                            <h3><a href="{{ site.baseurl }}/blog/uncategorized.html">Uncategorized</a></h3>
-                            <p class="subtitle">
-                                Tổng hợp - Chưa phân loại    
-                            </p>
-                        </div>
-                    </li>		
+	<link rel="stylesheet" href="sip/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="sip/css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="sip/css/fontello.css">
+    <link rel="stylesheet" href="sip/css/animation.css">
+    <!--[if IE 7]><link rel="stylesheet" href="sip/css/fontello-ie7.css"><![endif]-->
+	<script src="sip/js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Le Duy Quang</title>
+</head>
+<body>
+	
+	<main class="cd-main-content">
+		<h1>Lê Duy Quang</h1>
+		<a href="https://leduyquang.socialdoe.com" class="cd-btn" target="_blank">I &hearts; WordPress</a>
+		<a class="cd-nugget-info about" href="#1">
+            &infin; Giới Thiệu
+		</a>
+		<a class="cd-nugget-info contact" href="#2">
+            &lowast; Liên Hệ
+		</a>
+		<!-- your content here -->
+	</main>
+
+	<div class="cd-panel from-right">
+		<header class="cd-panel-header">
+			<h2>Đôi lời</h2>
+			<a href="#0" class="cd-panel-close">Đóng</a>
+		</header>
+
+		<div class="cd-panel-container _about">
+			<div class="cd-panel-content">
+				<p>Công việc chính của tôi là thiết kế website dựa trên nền tảng nguồn mở WordPress - OpenCart, Magento hay PrestaShop. Tuy không giỏi lập trình nhưng thiết kế giao diện người dùng là thế mạnh của tôi. Nếu bạn đang tìm một người thiết kế giao diện web/cms/shopping cart. Ngoài ra tôi có thể khởi tạo - xây dựng và quản lý hệ thống Adwords.</p>
+                <p>Hiện tôi đang làm việc tự do dạng Freelancer, Part-time. Vậy nếu bạn có nhu cầu thuê dịch vụ tôi rất sẵn lòng tham gia. Mọi chi tiết xin vui lòng liên hệ:</p>
+                <p><span class="symbol">&#9758;</span> Email: <a href="mailto:work@leduyquang.com">work@leduyquang.com</a></p>
+
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+	
+	<div class="cd-panel-wp from-right">
+		<header class="cd-panel-header">
+			<h2>Liên Hệ</h2>
+			<a href="#1" class="cd-panel-close">Đóng</a>
+		</header>
+
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+				<p>Để liên hệ xin mời sử dụng các kênh bên dưới, ưu tiên <strong>email</strong> - tôi sẽ hồi đáp trong vòng 24 giờ trong các ngày làm việc. Ngoài ra bạn cũng có thể gọi hoặc nhắn tin qua <strong>Skype</strong>.</p>
+                
+                <ul class="contact-card">
+                    <li><i class="icon-mail-alt"></i><a href="mailto:work@leduyquang.com" target="_blank">work@leduyquang.com</a></li>
+                    <li><i class="icon-skype"></i><a href="skype:quangbahoa?chat" target="_blank">Skype</a></li>
+                    <li><i class="icon-twitter-circled"></i><a href="https://twitter.com/quangbahoa" target="_blank">Twitter</a></li>
+                    <li><i class="icon-github"></i><a href="https://github.com/quangbahoa" target="_blank">Github</a></li>
                 </ul>
-            
-            </div>
-        </div>
-        </div> <!-- #main -->
+                <p><span class="symbol">&#9786;</span></p>
+                
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+<script src="sip/js/jquery-2.1.1.js"></script>
+<script src="sip/js/main.js"></script> <!-- Resource jQuery -->
+
+<div id="menu">
+  <span class="hand">&#9758;</span><a href="#">I'm available for hire</a>
+</div>
+
+</body>
+</html>
