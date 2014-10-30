@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -199,7 +199,7 @@ html, body {
 .cd-main-content {
   text-align: center;
   min-height: 100%;
-  margin-bottom: -32px;
+  margin-bottom: -45px;
 }
 .cd-main-content h1 {
   font-size: 20px;
@@ -571,14 +571,14 @@ ul.contact-card li {
 #menu {
   background-color: #2e3843;
   text-align: center;
-  height: 32px;
+  height: 45px;
   bottom: 0;
 }
 
 #menu a {
   color: #fff;
   display: inline-block;
-  padding: .5em 1em;
+  padding: .9em 1em;
   text-decoration: none;
 }
 
